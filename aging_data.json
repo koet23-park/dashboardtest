@@ -1,0 +1,1515 @@
+{
+  "summary": {
+    "totalIMEI": 61751,
+    "avgAgingDays": 110.7,
+    "maxAgingDays": 1205,
+    "medianAgingDays": 75,
+    "over90Days": 15556,
+    "over120Days": 7400,
+    "over90Ratio": 25.2,
+    "over120Ratio": 12.0
+  },
+  "agingPeriodDist": {
+    "121+ Days": 7376,
+    "91~120 Days": 7806,
+    "61~90 Days": 33626,
+    "31~60 Days": 12943
+  },
+  "agingSeverity": {
+    "Critical (121+d)": 7376,
+    "High Risk (91~120d)": 7806,
+    "Warning (61~90d)": 33626,
+    "Caution (31~60d)": 12943
+  },
+  "gradeDist": {
+    "D+": 3299,
+    "B": 4036,
+    "C+": 15883,
+    "B+": 18341,
+    "A+": 11447,
+    "D": 2827,
+    "C": 294,
+    "A": 8,
+    "WIP": 5616
+  },
+  "storageDist": {
+    "256GB": 21263,
+    "1TB": 398,
+    "512GB": 35688,
+    "128GB": 4397,
+    "64GB": 5
+  },
+  "transactionDist": {
+    "A-2": 45623,
+    "A-3": 2501,
+    "A-1": 6,
+    "B-1": 4463,
+    "B-2": 157,
+    "B-3": 109,
+    "C-1": 62,
+    "D-3": 46,
+    "D-5": 1,
+    "D-1": 1,
+    "E-4": 568,
+    "E-2": 8046,
+    "G-1": 158,
+    "F-3": 10
+  },
+  "topModels": [
+    {
+      "name": "Galaxy S25 Ultra",
+      "count": 24419,
+      "avgAging": 77.8,
+      "maxAging": 441,
+      "over90": 1154,
+      "over90Ratio": 4.7
+    },
+    {
+      "name": "Galaxy S23 Ultra",
+      "count": 7860,
+      "avgAging": 269.5,
+      "maxAging": 771,
+      "over90": 4583,
+      "over90Ratio": 58.3
+    },
+    {
+      "name": "Galaxy S24 Ultra",
+      "count": 5979,
+      "avgAging": 70.7,
+      "maxAging": 480,
+      "over90": 187,
+      "over90Ratio": 3.1
+    },
+    {
+      "name": "Galaxy S24 Ultra CRN",
+      "count": 4542,
+      "avgAging": 99.4,
+      "maxAging": 320,
+      "over90": 4512,
+      "over90Ratio": 99.3
+    },
+    {
+      "name": "Galaxy S25+",
+      "count": 2572,
+      "avgAging": 66.9,
+      "maxAging": 315,
+      "over90": 67,
+      "over90Ratio": 2.6
+    },
+    {
+      "name": "Galaxy S25",
+      "count": 1822,
+      "avgAging": 65.3,
+      "maxAging": 314,
+      "over90": 37,
+      "over90Ratio": 2.0
+    },
+    {
+      "name": "Galaxy Z Fold7",
+      "count": 1398,
+      "avgAging": 91.3,
+      "maxAging": 321,
+      "over90": 123,
+      "over90Ratio": 8.8
+    },
+    {
+      "name": "Galaxy S23+ CRN",
+      "count": 1221,
+      "avgAging": 105.3,
+      "maxAging": 152,
+      "over90": 1197,
+      "over90Ratio": 98.0
+    },
+    {
+      "name": "Galaxy S23",
+      "count": 1198,
+      "avgAging": 57.2,
+      "maxAging": 741,
+      "over90": 12,
+      "over90Ratio": 1.0
+    },
+    {
+      "name": "Galaxy Z Fold6",
+      "count": 1175,
+      "avgAging": 69.9,
+      "maxAging": 202,
+      "over90": 83,
+      "over90Ratio": 7.1
+    },
+    {
+      "name": "Galaxy S22 Ultra",
+      "count": 1075,
+      "avgAging": 103.2,
+      "maxAging": 1134,
+      "over90": 70,
+      "over90Ratio": 6.5
+    },
+    {
+      "name": "Galaxy Z Flip7",
+      "count": 1046,
+      "avgAging": 78.3,
+      "maxAging": 315,
+      "over90": 39,
+      "over90Ratio": 3.7
+    },
+    {
+      "name": "Galaxy Z Flip6",
+      "count": 895,
+      "avgAging": 51.9,
+      "maxAging": 294,
+      "over90": 24,
+      "over90Ratio": 2.7
+    },
+    {
+      "name": "Galaxy S24+ CRN",
+      "count": 705,
+      "avgAging": 126.2,
+      "maxAging": 330,
+      "over90": 701,
+      "over90Ratio": 99.4
+    },
+    {
+      "name": "Galaxy S22 CRN",
+      "count": 596,
+      "avgAging": 97.3,
+      "maxAging": 102,
+      "over90": 592,
+      "over90Ratio": 99.3
+    },
+    {
+      "name": "Galaxy S24 CRN",
+      "count": 491,
+      "avgAging": 100.3,
+      "maxAging": 118,
+      "over90": 489,
+      "over90Ratio": 99.6
+    },
+    {
+      "name": "Galaxy S25 Edge",
+      "count": 454,
+      "avgAging": 64.7,
+      "maxAging": 341,
+      "over90": 5,
+      "over90Ratio": 1.1
+    },
+    {
+      "name": "Galaxy S24+",
+      "count": 440,
+      "avgAging": 67.9,
+      "maxAging": 468,
+      "over90": 9,
+      "over90Ratio": 2.0
+    },
+    {
+      "name": "Galaxy S22",
+      "count": 394,
+      "avgAging": 82.2,
+      "maxAging": 1134,
+      "over90": 27,
+      "over90Ratio": 6.9
+    },
+    {
+      "name": "Galaxy Z Flip5",
+      "count": 387,
+      "avgAging": 398.2,
+      "maxAging": 588,
+      "over90": 311,
+      "over90Ratio": 80.4
+    }
+  ],
+  "modelAgingCross": [
+    {
+      "name": "Galaxy S25 Ultra",
+      "31~60 Days": 4569,
+      "61~90 Days": 18779,
+      "91~120 Days": 135,
+      "121+ Days": 936
+    },
+    {
+      "name": "Galaxy S23 Ultra",
+      "31~60 Days": 1264,
+      "61~90 Days": 2016,
+      "91~120 Days": 417,
+      "121+ Days": 4163
+    },
+    {
+      "name": "Galaxy S24 Ultra",
+      "31~60 Days": 1488,
+      "61~90 Days": 4306,
+      "91~120 Days": 12,
+      "121+ Days": 173
+    },
+    {
+      "name": "Galaxy S24 Ultra CRN",
+      "31~60 Days": 11,
+      "61~90 Days": 237,
+      "91~120 Days": 4063,
+      "121+ Days": 231
+    },
+    {
+      "name": "Galaxy S25+",
+      "31~60 Days": 1240,
+      "61~90 Days": 1265,
+      "91~120 Days": 9,
+      "121+ Days": 58
+    },
+    {
+      "name": "Galaxy S25",
+      "31~60 Days": 1054,
+      "61~90 Days": 733,
+      "91~120 Days": 1,
+      "121+ Days": 34
+    },
+    {
+      "name": "Galaxy Z Fold7",
+      "31~60 Days": 73,
+      "61~90 Days": 1204,
+      "91~120 Days": 11,
+      "121+ Days": 110
+    },
+    {
+      "name": "Galaxy S23+ CRN",
+      "31~60 Days": 20,
+      "61~90 Days": 35,
+      "91~120 Days": 1097,
+      "121+ Days": 69
+    },
+    {
+      "name": "Galaxy S23",
+      "31~60 Days": 731,
+      "61~90 Days": 455,
+      "91~120 Days": 3,
+      "121+ Days": 9
+    },
+    {
+      "name": "Galaxy Z Fold6",
+      "31~60 Days": 362,
+      "61~90 Days": 730,
+      "91~120 Days": 45,
+      "121+ Days": 38
+    },
+    {
+      "name": "Galaxy S22 Ultra",
+      "31~60 Days": 112,
+      "61~90 Days": 893,
+      "91~120 Days": 6,
+      "121+ Days": 64
+    },
+    {
+      "name": "Galaxy Z Flip7",
+      "31~60 Days": 195,
+      "61~90 Days": 813,
+      "91~120 Days": 2,
+      "121+ Days": 36
+    },
+    {
+      "name": "Galaxy Z Flip6",
+      "31~60 Days": 601,
+      "61~90 Days": 270,
+      "91~120 Days": 18,
+      "121+ Days": 6
+    },
+    {
+      "name": "Galaxy S24+ CRN",
+      "31~60 Days": 2,
+      "61~90 Days": 4,
+      "91~120 Days": 434,
+      "121+ Days": 265
+    },
+    {
+      "name": "Galaxy S22 CRN",
+      "31~60 Days": 1,
+      "61~90 Days": 3,
+      "91~120 Days": 592,
+      "121+ Days": 0
+    },
+    {
+      "name": "Galaxy S24 CRN",
+      "31~60 Days": 2,
+      "61~90 Days": 0,
+      "91~120 Days": 489,
+      "121+ Days": 0
+    },
+    {
+      "name": "Galaxy S25 Edge",
+      "31~60 Days": 172,
+      "61~90 Days": 277,
+      "91~120 Days": 3,
+      "121+ Days": 2
+    },
+    {
+      "name": "Galaxy S24+",
+      "31~60 Days": 177,
+      "61~90 Days": 254,
+      "91~120 Days": 3,
+      "121+ Days": 6
+    },
+    {
+      "name": "Galaxy S22",
+      "31~60 Days": 81,
+      "61~90 Days": 286,
+      "91~120 Days": 6,
+      "121+ Days": 21
+    },
+    {
+      "name": "Galaxy Z Flip5",
+      "31~60 Days": 37,
+      "61~90 Days": 39,
+      "91~120 Days": 1,
+      "121+ Days": 310
+    }
+  ],
+  "allModels": [
+    {
+      "name": "Galaxy S25 Ultra",
+      "count": 24419,
+      "storage": "1TB, 256GB, 512GB",
+      "grades": "A, A+, B, B+, C, C+, D, D+",
+      "avgAging": 77.8,
+      "maxAging": 441,
+      "over90": 1154,
+      "over90Ratio": 4.7,
+      "over120": 936
+    },
+    {
+      "name": "Galaxy S23 Ultra",
+      "count": 7860,
+      "storage": "1TB, 256GB, 512GB",
+      "grades": "A, A+, B, B+, C, C+, D, D+, WIP",
+      "avgAging": 269.5,
+      "maxAging": 771,
+      "over90": 4583,
+      "over90Ratio": 58.3,
+      "over120": 4163
+    },
+    {
+      "name": "Galaxy S24 Ultra",
+      "count": 5979,
+      "storage": "1TB, 256GB, 512GB",
+      "grades": "A+, B, B+, C, C+, D, D+, WIP",
+      "avgAging": 70.7,
+      "maxAging": 480,
+      "over90": 187,
+      "over90Ratio": 3.1,
+      "over120": 173
+    },
+    {
+      "name": "Galaxy S24 Ultra CRN",
+      "count": 4542,
+      "storage": "256GB, 512GB",
+      "grades": "A+, B, B+, C, C+, D, D+, WIP",
+      "avgAging": 99.4,
+      "maxAging": 320,
+      "over90": 4512,
+      "over90Ratio": 99.3,
+      "over120": 233
+    },
+    {
+      "name": "Galaxy S25+",
+      "count": 2572,
+      "storage": "256GB, 512GB",
+      "grades": "A+, B, B+, C, C+, D, D+",
+      "avgAging": 66.9,
+      "maxAging": 315,
+      "over90": 67,
+      "over90Ratio": 2.6,
+      "over120": 58
+    },
+    {
+      "name": "Galaxy S25",
+      "count": 1822,
+      "storage": "128GB, 256GB",
+      "grades": "A+, B+, C, C+, D, D+",
+      "avgAging": 65.3,
+      "maxAging": 314,
+      "over90": 37,
+      "over90Ratio": 2.0,
+      "over120": 34
+    },
+    {
+      "name": "Galaxy Z Fold7",
+      "count": 1398,
+      "storage": "1TB, 256GB, 512GB",
+      "grades": "A, A+, B, B+, C, C+, D, D+",
+      "avgAging": 91.3,
+      "maxAging": 321,
+      "over90": 123,
+      "over90Ratio": 8.8,
+      "over120": 110
+    },
+    {
+      "name": "Galaxy S23+ CRN",
+      "count": 1221,
+      "storage": "256GB, 512GB",
+      "grades": "A+, B, B+, C, C+, D, D+, WIP",
+      "avgAging": 105.3,
+      "maxAging": 152,
+      "over90": 1197,
+      "over90Ratio": 98.0,
+      "over120": 76
+    },
+    {
+      "name": "Galaxy S23",
+      "count": 1198,
+      "storage": "128GB, 256GB",
+      "grades": "A+, B+, C, C+, D, D+, WIP",
+      "avgAging": 57.2,
+      "maxAging": 741,
+      "over90": 12,
+      "over90Ratio": 1.0,
+      "over120": 9
+    },
+    {
+      "name": "Galaxy Z Fold6",
+      "count": 1175,
+      "storage": "1TB, 256GB, 512GB",
+      "grades": "A+, B+, C, C+, D, D+, WIP",
+      "avgAging": 69.9,
+      "maxAging": 202,
+      "over90": 83,
+      "over90Ratio": 7.1,
+      "over120": 38
+    },
+    {
+      "name": "Galaxy S22 Ultra",
+      "count": 1075,
+      "storage": "128GB, 1TB, 256GB, 512GB",
+      "grades": "A+, B+, C+, D, D+, WIP",
+      "avgAging": 103.2,
+      "maxAging": 1134,
+      "over90": 70,
+      "over90Ratio": 6.5,
+      "over120": 64
+    },
+    {
+      "name": "Galaxy Z Flip7",
+      "count": 1046,
+      "storage": "256GB, 512GB",
+      "grades": "A+, B+, C, C+, D, D+",
+      "avgAging": 78.3,
+      "maxAging": 315,
+      "over90": 39,
+      "over90Ratio": 3.7,
+      "over120": 36
+    },
+    {
+      "name": "Galaxy Z Flip6",
+      "count": 895,
+      "storage": "256GB, 512GB",
+      "grades": "A, A+, B+, C+, D, D+",
+      "avgAging": 51.9,
+      "maxAging": 294,
+      "over90": 24,
+      "over90Ratio": 2.7,
+      "over120": 6
+    },
+    {
+      "name": "Galaxy S24+ CRN",
+      "count": 705,
+      "storage": "256GB, 512GB",
+      "grades": "A+, B, B+, C, C+, D, WIP",
+      "avgAging": 126.2,
+      "maxAging": 330,
+      "over90": 701,
+      "over90Ratio": 99.4,
+      "over120": 265
+    },
+    {
+      "name": "Galaxy S22 CRN",
+      "count": 596,
+      "storage": "128GB, 256GB",
+      "grades": "A+, B, B+, C, C+, D, WIP",
+      "avgAging": 97.3,
+      "maxAging": 102,
+      "over90": 592,
+      "over90Ratio": 99.3,
+      "over120": 0
+    },
+    {
+      "name": "Galaxy S24 CRN",
+      "count": 491,
+      "storage": "128GB, 256GB",
+      "grades": "A+, B, B+, C, C+, WIP",
+      "avgAging": 100.3,
+      "maxAging": 118,
+      "over90": 489,
+      "over90Ratio": 99.6,
+      "over120": 0
+    },
+    {
+      "name": "Galaxy S25 Edge",
+      "count": 454,
+      "storage": "256GB, 512GB",
+      "grades": "A+, B+, C+, D, D+",
+      "avgAging": 64.7,
+      "maxAging": 341,
+      "over90": 5,
+      "over90Ratio": 1.1,
+      "over120": 2
+    },
+    {
+      "name": "Galaxy S24+",
+      "count": 440,
+      "storage": "256GB, 512GB",
+      "grades": "A+, B, B+, C+, D, D+",
+      "avgAging": 67.9,
+      "maxAging": 468,
+      "over90": 9,
+      "over90Ratio": 2.0,
+      "over120": 6
+    },
+    {
+      "name": "Galaxy S22",
+      "count": 394,
+      "storage": "128GB, 256GB",
+      "grades": "A+, B, B+, C+, D, D+, WIP",
+      "avgAging": 82.2,
+      "maxAging": 1134,
+      "over90": 27,
+      "over90Ratio": 6.9,
+      "over120": 21
+    },
+    {
+      "name": "Galaxy Z Flip5",
+      "count": 387,
+      "storage": "256GB, 512GB",
+      "grades": "A+, B+, C+, D, D+, WIP",
+      "avgAging": 398.2,
+      "maxAging": 588,
+      "over90": 311,
+      "over90Ratio": 80.4,
+      "over120": 310
+    },
+    {
+      "name": "Galaxy Z Fold5",
+      "count": 360,
+      "storage": "1TB, 256GB, 512GB",
+      "grades": "A+, B+, C+, D, D+, WIP",
+      "avgAging": 77.4,
+      "maxAging": 629,
+      "over90": 13,
+      "over90Ratio": 3.6,
+      "over120": 13
+    },
+    {
+      "name": "Galaxy S22+",
+      "count": 355,
+      "storage": "128GB, 256GB",
+      "grades": "A+, B, B+, C+, D, D+, WIP",
+      "avgAging": 570.4,
+      "maxAging": 1205,
+      "over90": 172,
+      "over90Ratio": 48.5,
+      "over120": 162
+    },
+    {
+      "name": "Galaxy S23 CRN",
+      "count": 348,
+      "storage": "128GB, 256GB",
+      "grades": "A+, B, B+, C+, D, D+, WIP",
+      "avgAging": 80.1,
+      "maxAging": 141,
+      "over90": 121,
+      "over90Ratio": 34.8,
+      "over120": 113
+    },
+    {
+      "name": "Galaxy S23 Ultra CRN",
+      "count": 298,
+      "storage": "256GB, 512GB",
+      "grades": "A+, B, B+, C+, D, D+",
+      "avgAging": 103.4,
+      "maxAging": 459,
+      "over90": 103,
+      "over90Ratio": 34.6,
+      "over120": 73
+    },
+    {
+      "name": "Galaxy S21 5G",
+      "count": 229,
+      "storage": "128GB, 256GB",
+      "grades": "A+, B+, C+, D, D+, WIP",
+      "avgAging": 82.8,
+      "maxAging": 852,
+      "over90": 132,
+      "over90Ratio": 57.6,
+      "over120": 7
+    },
+    {
+      "name": "Galaxy S23+",
+      "count": 221,
+      "storage": "256GB, 512GB",
+      "grades": "A+, B, B+, C, C+, D, D+, WIP",
+      "avgAging": 71.7,
+      "maxAging": 571,
+      "over90": 6,
+      "over90Ratio": 2.7,
+      "over120": 6
+    },
+    {
+      "name": "Galaxy Z Fold5 CRN",
+      "count": 172,
+      "storage": "256GB, 512GB",
+      "grades": "A+, B, C+, WIP",
+      "avgAging": 159.4,
+      "maxAging": 265,
+      "over90": 157,
+      "over90Ratio": 91.3,
+      "over120": 113
+    },
+    {
+      "name": "Galaxy Z Flip5 CRN",
+      "count": 140,
+      "storage": "256GB, 512GB",
+      "grades": "C+, D+, WIP",
+      "avgAging": 401.3,
+      "maxAging": 482,
+      "over90": 138,
+      "over90Ratio": 98.6,
+      "over120": 138
+    },
+    {
+      "name": "Galaxy Z Flip6 CRN",
+      "count": 127,
+      "storage": "256GB, 512GB",
+      "grades": "A+, B, B+, C, C+, D, D+, WIP",
+      "avgAging": 117.8,
+      "maxAging": 216,
+      "over90": 125,
+      "over90Ratio": 98.4,
+      "over120": 41
+    },
+    {
+      "name": "Galaxy S23 FE CRN",
+      "count": 105,
+      "storage": "128GB",
+      "grades": "B+, C, C+, D",
+      "avgAging": 116.2,
+      "maxAging": 152,
+      "over90": 105,
+      "over90Ratio": 100.0,
+      "over120": 1
+    },
+    {
+      "name": "Galaxy S24",
+      "count": 77,
+      "storage": "128GB, 256GB",
+      "grades": "A+, B+, C+, D, D+",
+      "avgAging": 94.4,
+      "maxAging": 276,
+      "over90": 20,
+      "over90Ratio": 26.0,
+      "over120": 17
+    },
+    {
+      "name": "Galaxy S22 Ultra CRN",
+      "count": 74,
+      "storage": "128GB, 256GB, 512GB",
+      "grades": "B, B+, C+, D+, WIP",
+      "avgAging": 804.8,
+      "maxAging": 1076,
+      "over90": 61,
+      "over90Ratio": 82.4,
+      "over120": 61
+    },
+    {
+      "name": "Galaxy S26 Ultra",
+      "count": 62,
+      "storage": "1TB, 256GB, 512GB",
+      "grades": "A+, B+, C+",
+      "avgAging": 69.8,
+      "maxAging": 89,
+      "over90": 0,
+      "over90Ratio": 0.0,
+      "over120": 0
+    },
+    {
+      "name": "Galaxy S25+ CRN",
+      "count": 55,
+      "storage": "256GB, 512GB",
+      "grades": "A+, B+, C+, WIP",
+      "avgAging": 222.5,
+      "maxAging": 276,
+      "over90": 42,
+      "over90Ratio": 76.4,
+      "over120": 42
+    },
+    {
+      "name": "Galaxy S25 Ultra CRN",
+      "count": 52,
+      "storage": "1TB, 256GB, 512GB",
+      "grades": "A+, B+, C+, WIP",
+      "avgAging": 90.8,
+      "maxAging": 267,
+      "over90": 7,
+      "over90Ratio": 13.5,
+      "over120": 7
+    },
+    {
+      "name": "Galaxy Z Fold6 CRN",
+      "count": 45,
+      "storage": "256GB, 512GB",
+      "grades": "C, C+, WIP",
+      "avgAging": 157.4,
+      "maxAging": 189,
+      "over90": 44,
+      "over90Ratio": 97.8,
+      "over120": 30
+    },
+    {
+      "name": "Galaxy S25 Edge CRN",
+      "count": 42,
+      "storage": "512GB",
+      "grades": "B+, D+, WIP",
+      "avgAging": 70.0,
+      "maxAging": 72,
+      "over90": 0,
+      "over90Ratio": 0.0,
+      "over120": 0
+    },
+    {
+      "name": "Galaxy S24 FE CRN",
+      "count": 36,
+      "storage": "128GB",
+      "grades": "A+, B+, C, C+",
+      "avgAging": 112.1,
+      "maxAging": 119,
+      "over90": 36,
+      "over90Ratio": 100.0,
+      "over120": 0
+    },
+    {
+      "name": "Galaxy S21 Ultra 5G",
+      "count": 33,
+      "storage": "128GB, 256GB, 512GB",
+      "grades": "A+, B+, C+, D+",
+      "avgAging": 89.5,
+      "maxAging": 495,
+      "over90": 4,
+      "over90Ratio": 12.1,
+      "over120": 4
+    },
+    {
+      "name": "Galaxy Z Fold4",
+      "count": 28,
+      "storage": "1TB, 256GB, 512GB",
+      "grades": "A+, B+, C+, D, D+",
+      "avgAging": 102.4,
+      "maxAging": 490,
+      "over90": 4,
+      "over90Ratio": 14.3,
+      "over120": 4
+    },
+    {
+      "name": "Galaxy S25 FE",
+      "count": 23,
+      "storage": "128GB, 256GB",
+      "grades": "A+, B+, C+, D+",
+      "avgAging": 90.5,
+      "maxAging": 254,
+      "over90": 3,
+      "over90Ratio": 13.0,
+      "over120": 3
+    },
+    {
+      "name": "Galaxy Z Flip4",
+      "count": 23,
+      "storage": "128GB, 256GB, 512GB",
+      "grades": "B+, C+, D, D+",
+      "avgAging": 72.7,
+      "maxAging": 185,
+      "over90": 1,
+      "over90Ratio": 4.3,
+      "over120": 1
+    },
+    {
+      "name": "Galaxy S25 CRN",
+      "count": 16,
+      "storage": "128GB, 256GB",
+      "grades": "B+, C+, WIP",
+      "avgAging": 56.0,
+      "maxAging": 69,
+      "over90": 0,
+      "over90Ratio": 0.0,
+      "over120": 0
+    },
+    {
+      "name": "Galaxy Note20 Ultra 5G",
+      "count": 15,
+      "storage": "128GB, 512GB",
+      "grades": "C+, D, D+",
+      "avgAging": 85.5,
+      "maxAging": 441,
+      "over90": 2,
+      "over90Ratio": 13.3,
+      "over120": 2
+    },
+    {
+      "name": "Galaxy S21 FE 5G",
+      "count": 15,
+      "storage": "128GB, 256GB",
+      "grades": "A+, B+, C+, D, D+",
+      "avgAging": 63.3,
+      "maxAging": 258,
+      "over90": 2,
+      "over90Ratio": 13.3,
+      "over120": 2
+    },
+    {
+      "name": "Galaxy S21 5G CRN",
+      "count": 13,
+      "storage": "128GB, 256GB",
+      "grades": "A+, C+, D+",
+      "avgAging": 108.1,
+      "maxAging": 441,
+      "over90": 10,
+      "over90Ratio": 76.9,
+      "over120": 1
+    },
+    {
+      "name": "Galaxy S21+ 5G",
+      "count": 13,
+      "storage": "128GB, 256GB",
+      "grades": "B+, C+, D+, WIP",
+      "avgAging": 178.2,
+      "maxAging": 1134,
+      "over90": 2,
+      "over90Ratio": 15.4,
+      "over120": 2
+    },
+    {
+      "name": "Galaxy S23 FE",
+      "count": 12,
+      "storage": "128GB, 256GB",
+      "grades": "A+, B, B+, C+, D",
+      "avgAging": 65.6,
+      "maxAging": 101,
+      "over90": 2,
+      "over90Ratio": 16.7,
+      "over120": 0
+    },
+    {
+      "name": "Galaxy Z Flip7 CRN",
+      "count": 12,
+      "storage": "256GB, 512GB",
+      "grades": "A+, B+, WIP",
+      "avgAging": 41.2,
+      "maxAging": 80,
+      "over90": 0,
+      "over90Ratio": 0.0,
+      "over120": 0
+    },
+    {
+      "name": "Galaxy Z Flip3 5G",
+      "count": 10,
+      "storage": "128GB, 256GB",
+      "grades": "C+, D, D+",
+      "avgAging": 103.1,
+      "maxAging": 453,
+      "over90": 1,
+      "over90Ratio": 10.0,
+      "over120": 1
+    },
+    {
+      "name": "Galaxy Z Fold7 CRN",
+      "count": 9,
+      "storage": "1TB, 256GB, 512GB",
+      "grades": "B+, C+, D, WIP",
+      "avgAging": 60.1,
+      "maxAging": 84,
+      "over90": 0,
+      "over90Ratio": 0.0,
+      "over120": 0
+    },
+    {
+      "name": "Galaxy S22+ CRN",
+      "count": 9,
+      "storage": "128GB",
+      "grades": "B, C+, WIP",
+      "avgAging": 167.2,
+      "maxAging": 307,
+      "over90": 8,
+      "over90Ratio": 88.9,
+      "over120": 4
+    },
+    {
+      "name": "Galaxy Z Flip7 FE",
+      "count": 8,
+      "storage": "128GB, 256GB",
+      "grades": "A+, C+, D",
+      "avgAging": 201.4,
+      "maxAging": 309,
+      "over90": 5,
+      "over90Ratio": 62.5,
+      "over120": 5
+    },
+    {
+      "name": "Galaxy S10e",
+      "count": 6,
+      "storage": "128GB",
+      "grades": "B+, C+, D, D+",
+      "avgAging": 70.8,
+      "maxAging": 75,
+      "over90": 0,
+      "over90Ratio": 0.0,
+      "over120": 0
+    },
+    {
+      "name": "Galaxy S26",
+      "count": 4,
+      "storage": "256GB, 512GB",
+      "grades": "A+, B+, C+, D",
+      "avgAging": 75.2,
+      "maxAging": 91,
+      "over90": 1,
+      "over90Ratio": 25.0,
+      "over120": 0
+    },
+    {
+      "name": "Galaxy S24 FE",
+      "count": 3,
+      "storage": "128GB, 256GB",
+      "grades": "B+, C+",
+      "avgAging": 159.0,
+      "maxAging": 195,
+      "over90": 3,
+      "over90Ratio": 100.0,
+      "over120": 3
+    },
+    {
+      "name": "Galaxy S20 FE 5G",
+      "count": 3,
+      "storage": "128GB",
+      "grades": "B+, C+, D+",
+      "avgAging": 94.7,
+      "maxAging": 176,
+      "over90": 1,
+      "over90Ratio": 33.3,
+      "over120": 1
+    },
+    {
+      "name": "Galaxy Z Fold3 5G",
+      "count": 3,
+      "storage": "256GB, 512GB",
+      "grades": "B+, C+",
+      "avgAging": 70.3,
+      "maxAging": 77,
+      "over90": 0,
+      "over90Ratio": 0.0,
+      "over120": 0
+    },
+    {
+      "name": "Galaxy S26+",
+      "count": 3,
+      "storage": "256GB, 512GB",
+      "grades": "A+, B+",
+      "avgAging": 56.0,
+      "maxAging": 72,
+      "over90": 0,
+      "over90Ratio": 0.0,
+      "over120": 0
+    },
+    {
+      "name": "Galaxy S21 Ultra 5G CRN",
+      "count": 3,
+      "storage": "128GB",
+      "grades": "C+, D+",
+      "avgAging": 54.7,
+      "maxAging": 72,
+      "over90": 0,
+      "over90Ratio": 0.0,
+      "over120": 0
+    },
+    {
+      "name": "Galaxy Note20 5G",
+      "count": 2,
+      "storage": "128GB",
+      "grades": "B+, D+",
+      "avgAging": 118.0,
+      "maxAging": 155,
+      "over90": 1,
+      "over90Ratio": 50.0,
+      "over120": 1
+    },
+    {
+      "name": "Galaxy-A17 5G",
+      "count": 2,
+      "storage": "128GB",
+      "grades": "A+, B+",
+      "avgAging": 101.0,
+      "maxAging": 126,
+      "over90": 1,
+      "over90Ratio": 50.0,
+      "over120": 1
+    },
+    {
+      "name": "Galaxy S21+ 5G CRN",
+      "count": 2,
+      "storage": "128GB",
+      "grades": "C+",
+      "avgAging": 47.5,
+      "maxAging": 59,
+      "over90": 0,
+      "over90Ratio": 0.0,
+      "over120": 0
+    },
+    {
+      "name": "Galaxy Note10+",
+      "count": 2,
+      "storage": "256GB",
+      "grades": "D, D+",
+      "avgAging": 42.0,
+      "maxAging": 45,
+      "over90": 0,
+      "over90Ratio": 0.0,
+      "over120": 0
+    },
+    {
+      "name": "Galaxy-A13 5G",
+      "count": 1,
+      "storage": "64GB",
+      "grades": "D",
+      "avgAging": 80.0,
+      "maxAging": 80,
+      "over90": 0,
+      "over90Ratio": 0.0,
+      "over120": 0
+    },
+    {
+      "name": "Galaxy S10",
+      "count": 1,
+      "storage": "128GB",
+      "grades": "D",
+      "avgAging": 77.0,
+      "maxAging": 77,
+      "over90": 0,
+      "over90Ratio": 0.0,
+      "over120": 0
+    },
+    {
+      "name": "Galaxy-A23 5G",
+      "count": 1,
+      "storage": "64GB",
+      "grades": "C+",
+      "avgAging": 76.0,
+      "maxAging": 76,
+      "over90": 0,
+      "over90Ratio": 0.0,
+      "over120": 0
+    },
+    {
+      "name": "Galaxy-A32 5G",
+      "count": 1,
+      "storage": "64GB",
+      "grades": "C+",
+      "avgAging": 71.0,
+      "maxAging": 71,
+      "over90": 0,
+      "over90Ratio": 0.0,
+      "over120": 0
+    },
+    {
+      "name": "Galaxy Note8",
+      "count": 1,
+      "storage": "64GB",
+      "grades": "C+",
+      "avgAging": 64.0,
+      "maxAging": 64,
+      "over90": 0,
+      "over90Ratio": 0.0,
+      "over120": 0
+    },
+    {
+      "name": "Galaxy-A25 5G",
+      "count": 1,
+      "storage": "128GB",
+      "grades": "B+",
+      "avgAging": 57.0,
+      "maxAging": 57,
+      "over90": 0,
+      "over90Ratio": 0.0,
+      "over120": 0
+    },
+    {
+      "name": "Galaxy S20 Ultra 5G",
+      "count": 1,
+      "storage": "128GB",
+      "grades": "D+",
+      "avgAging": 48.0,
+      "maxAging": 48,
+      "over90": 0,
+      "over90Ratio": 0.0,
+      "over120": 0
+    },
+    {
+      "name": "Galaxy-A14 5G",
+      "count": 1,
+      "storage": "64GB",
+      "grades": "B+",
+      "avgAging": 48.0,
+      "maxAging": 48,
+      "over90": 0,
+      "over90Ratio": 0.0,
+      "over120": 0
+    },
+    {
+      "name": "Galaxy S20 5G",
+      "count": 1,
+      "storage": "128GB",
+      "grades": "D",
+      "avgAging": 36.0,
+      "maxAging": 36,
+      "over90": 0,
+      "over90Ratio": 0.0,
+      "over120": 0
+    },
+    {
+      "name": "Galaxy S10+",
+      "count": 1,
+      "storage": "512GB",
+      "grades": "C+",
+      "avgAging": 35.0,
+      "maxAging": 35,
+      "over90": 0,
+      "over90Ratio": 0.0,
+      "over120": 0
+    },
+    {
+      "name": "Galaxy Note20 Ultra 5G CRN",
+      "count": 1,
+      "storage": "128GB",
+      "grades": "D",
+      "avgAging": 33.0,
+      "maxAging": 33,
+      "over90": 0,
+      "over90Ratio": 0.0,
+      "over120": 0
+    },
+    {
+      "name": "Galaxy Note20 5G CRN",
+      "count": 1,
+      "storage": "128GB",
+      "grades": "WIP",
+      "avgAging": 1120.0,
+      "maxAging": 1120,
+      "over90": 1,
+      "over90Ratio": 100.0,
+      "over120": 1
+    }
+  ],
+  "agingHistogram": [
+    {
+      "range": "30~45d",
+      "count": 4206
+    },
+    {
+      "range": "45~60d",
+      "count": 8059
+    },
+    {
+      "range": "60~75d",
+      "count": 16861
+    },
+    {
+      "range": "75~90d",
+      "count": 17069
+    },
+    {
+      "range": "90~105d",
+      "count": 6150
+    },
+    {
+      "range": "105~120d",
+      "count": 2006
+    },
+    {
+      "range": "120~135d",
+      "count": 513
+    },
+    {
+      "range": "135~150d",
+      "count": 141
+    },
+    {
+      "range": "150~165d",
+      "count": 331
+    },
+    {
+      "range": "165~180d",
+      "count": 84
+    },
+    {
+      "range": "180~195d",
+      "count": 185
+    },
+    {
+      "range": "195~210d",
+      "count": 238
+    },
+    {
+      "range": "210~225d",
+      "count": 195
+    },
+    {
+      "range": "225~240d",
+      "count": 61
+    },
+    {
+      "range": "240~255d",
+      "count": 23
+    },
+    {
+      "range": "255~270d",
+      "count": 47
+    },
+    {
+      "range": "270~285d",
+      "count": 155
+    },
+    {
+      "range": "285~300d",
+      "count": 241
+    },
+    {
+      "range": "300~315d",
+      "count": 451
+    },
+    {
+      "range": "315~330d",
+      "count": 27
+    },
+    {
+      "range": "330~345d",
+      "count": 3
+    },
+    {
+      "range": "345~360d",
+      "count": 2
+    },
+    {
+      "range": "360~375d",
+      "count": 2
+    },
+    {
+      "range": "390~405d",
+      "count": 109
+    },
+    {
+      "range": "405~420d",
+      "count": 5
+    },
+    {
+      "range": "420~435d",
+      "count": 12
+    },
+    {
+      "range": "435~450d",
+      "count": 165
+    },
+    {
+      "range": "450~465d",
+      "count": 1829
+    },
+    {
+      "range": "465~480d",
+      "count": 1796
+    },
+    {
+      "range": "480~495d",
+      "count": 498
+    },
+    {
+      "range": "495~510d",
+      "count": 3
+    },
+    {
+      "range": "510~525d",
+      "count": 2
+    },
+    {
+      "range": "525~540d",
+      "count": 3
+    },
+    {
+      "range": "540~555d",
+      "count": 3
+    },
+    {
+      "range": "555~570d",
+      "count": 4
+    },
+    {
+      "range": "570~585d",
+      "count": 3
+    },
+    {
+      "range": "585~600d",
+      "count": 8
+    },
+    {
+      "range": "600~615d",
+      "count": 2
+    },
+    {
+      "range": "615~630d",
+      "count": 2
+    },
+    {
+      "range": "630~645d",
+      "count": 1
+    },
+    {
+      "range": "660~675d",
+      "count": 6
+    },
+    {
+      "range": "690~705d",
+      "count": 1
+    },
+    {
+      "range": "735~750d",
+      "count": 23
+    },
+    {
+      "range": "750~765d",
+      "count": 2
+    },
+    {
+      "range": "765~780d",
+      "count": 1
+    },
+    {
+      "range": "840~855d",
+      "count": 1
+    },
+    {
+      "range": "855~870d",
+      "count": 2
+    },
+    {
+      "range": "870~885d",
+      "count": 3
+    },
+    {
+      "range": "900~915d",
+      "count": 1
+    },
+    {
+      "range": "975~990d",
+      "count": 1
+    },
+    {
+      "range": "1005~1020d",
+      "count": 1
+    },
+    {
+      "range": "1065~1080d",
+      "count": 52
+    },
+    {
+      "range": "1095~1110d",
+      "count": 1
+    },
+    {
+      "range": "1110~1125d",
+      "count": 1
+    },
+    {
+      "range": "1125~1140d",
+      "count": 3
+    },
+    {
+      "range": "1185~1200d",
+      "count": 62
+    },
+    {
+      "range": "1200~1215d",
+      "count": 95
+    }
+  ],
+  "locationDist": {
+    "APKUDO": 48130,
+    "D24": 4729,
+    "MPC_PLANT": 62,
+    "SEV_Repair": 48,
+    "MPC_BUFFER": 8614,
+    "D14": 168
+  },
+  "locationAgingCross": {
+    "APKUDO": {
+      "121+ Days": 1559,
+      "91~120 Days": 848,
+      "61~90 Days": 33124,
+      "31~60 Days": 12599
+    },
+    "D24": {
+      "121+ Days": 4667,
+      "61~90 Days": 21,
+      "31~60 Days": 41
+    },
+    "MPC_PLANT": {
+      "121+ Days": 61,
+      "61~90 Days": 1
+    },
+    "SEV_Repair": {
+      "91~120 Days": 47,
+      "31~60 Days": 1
+    },
+    "MPC_BUFFER": {
+      "121+ Days": 921,
+      "91~120 Days": 6911,
+      "61~90 Days": 480,
+      "31~60 Days": 302
+    },
+    "D14": {
+      "121+ Days": 168
+    }
+  },
+  "locationGradeCross": {
+    "APKUDO": {
+      "D+": 2876,
+      "B": 15,
+      "C+": 14308,
+      "B+": 17570,
+      "A+": 11109,
+      "D": 2145,
+      "C": 99,
+      "A": 8
+    },
+    "D24": {
+      "WIP": 528,
+      "C+": 233,
+      "D": 396,
+      "B+": 118,
+      "A+": 72,
+      "D+": 187,
+      "B": 3190,
+      "C": 5
+    },
+    "MPC_PLANT": {
+      "WIP": 62
+    },
+    "SEV_Repair": {
+      "B": 15,
+      "WIP": 29,
+      "C+": 3,
+      "D": 1
+    },
+    "MPC_BUFFER": {
+      "WIP": 4831,
+      "B": 814,
+      "D": 285,
+      "D+": 236,
+      "B+": 653,
+      "C+": 1339,
+      "A+": 266,
+      "C": 190
+    },
+    "D14": {
+      "WIP": 166,
+      "B": 2
+    }
+  },
+  "locationImeiDetail": {},
+  "lastUpdated": "2026-06-11 14:46"
+}
