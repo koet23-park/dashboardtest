@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEA GVI Aging Management</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+    <style>
+        .login-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:#f1f5f9;display:flex;justify-content:center;align-items:center;z-index:9999}
+        .login-overlay.hidden{display:none}
+        .login-box{background:#fff;border:1px solid #e2e8f0;border-radius:16px;padding:40px 36px;width:380px;box-shadow:0 25px 50px rgba(0,0,0,.1)}
+        .login-box .login-logo{text-align:center;margin-bottom:28px}
+        .login-box .login-logo .icon{font-size:40px;margin-bottom:12px}
+        .login-box .login-logo h2{font-size:20px;font-weight:700;color:#1e293b}
+        .login-box .login-logo p{font-size:13px;color:#64748b;margin-top:4px}
+        .login-field{margin-bottom:18px}
+        .login-field label{display:block;font-size:12px;color:#64748b;text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px}
+        .login-field input{width:100%;background:#f8fafc;border:1px solid #cbd5e1;border-radius:8px;padding:10px 14px;color:#1e293b;font-size:14px;outline:none;transition:border-color .2s}
+        .login-field input:focus{border-color:#3b82f6}
+        .login-btn{width:100%;padding:12px;background:#3b82f6;color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;transition:background .2s;margin-top:4px}
+        .login-btn:hover{background:#2563eb}
+        .login-error{color:#ef4444;font-size:13px;text-align:center;margin-top:12px;min-height:20px}
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,sans-serif;background:#f8fafc;color:#1e293b;min-height:100vh}
+        .header{background:linear-gradient(135deg,#1e3a5f 0%,#0f172a 100%);padding:20px 32px;border-bottom:2px solid #3b82f6;display:flex;justify-content:space-between;align-items:center}
+        .header h1{font-size:24px;font-weight:700;color:#fff;display:flex;align-items:center;gap:12px}
+        .header h1 .icon{font-size:28px}
+        .header .subtitle{font-size:13px;color:#94a3b8;margin-top:2px}
+        .container{max-width:1440px;margin:0 auto;padding:24px}
+        .kpi-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-bottom:24px}
+        .kpi-card{background:#fff;border-radius:12px;padding:20px;border:1px solid #e2e8f0;position:relative;overflow:hidden}
+        .kpi-card::before{content:'';position:absolute;top:0;left:0;width:100%;height:3px}
+        .kpi-card.blue::before{background:#3b82f6}
+        .kpi-card.amber::before{background:#f59e0b}
+        .kpi-card.red::before{background:#ef4444}
+        .kpi-card.green::before{background:#10b981}
+        .kpi-card.purple::before{background:#8b5cf6}
+        .kpi-label{font-size:12px;color:#64748b;text-transform:uppercase;letter-spacing:.5px;margin-bottom:8px}
+        .kpi-value{font-size:28px;font-weight:700;color:#1e293b}
+        .kpi-card.blue .kpi-value{color:#2563eb}
+        .kpi-card.amber .kpi-value{color:#d97706}
+        .kpi-card.red .kpi-value{color:#dc2626}
+        .kpi-card.green .kpi-value{color:#059669}
+        .kpi-card.purple .kpi-value{color:#7c3aed}
+        .kpi-sub{font-size:12px;color:#94a3b8;margin-top:4px}
+        .chart-grid{display:grid;grid-template-columns:2fr 1fr;gap:16px;margin-bottom:24px}
+        .chart-grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:24px}
+        .chart-card{background:#fff;border-radius:12px;padding:20px;border:1px solid #e2e8f0}
+        .chart-title{font-size:15px;font-weight:600;color:#1e293b;margin-bottom:16px;display:flex;align-items:center;gap:8px}
+        .chart-title .dot{width:8px;height:8px;border-radius:50%;display:inline-block}
+        .chart-wrapper{position:relative;width:100%}
+        .table-card{background:#fff;border-radius:12px;padding:20px;border:1px solid #e2e8f0;margin-bottom:48px}
+        .table-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+        .search-box{background:#f8fafc;border:1px solid #cbd5e1;border-radius:8px;padding:8px 14px;color:#1e293b;font-size:13px;width:280px;outline:none}
+        .search-box:focus{border-color:#3b82f6}
+        .data-table{width:100%;border-collapse:collapse;font-size:13px}
+        .data-table thead th{background:#f1f5f9;padding:10px 12px;text-align:left;font-weight:600;color:#475569;border-bottom:2px solid #e2e8f0;user-select:none;white-space:nowrap;position:relative}
+        .data-table thead th.sortable{cursor:pointer;padding-right:20px}
+        .data-table thead th.sortable:hover{color:#1e293b}
+        .data-table thead th.sortable::after{content:'⇅';position:absolute;right:4px;top:50%;transform:translateY(-50%);font-size:10px;opacity:.4}
+        .data-table thead th.sort-asc::after{content:'↑';opacity:1;color:#2563eb}
+        .data-table thead th.sort-desc::after{content:'↓';opacity:1;color:#2563eb}
+        .data-table tbody tr{border-bottom:1px solid #f1f5f9;transition:background .15s}
+        .data-table tbody tr:hover{background:#f1f5f9}
+        .data-table tbody td{padding:9px 12px;white-space:nowrap}
+        .sticky-col{position:sticky;left:0;background:#fff;z-index:1}
+        .data-table tbody tr:hover .sticky-col{background:#f1f5f9}
+        .data-table .num{text-align:right;font-variant-numeric:tabular-nums}
+        .badge{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600}
+        .badge-caution{background:#dbeafe;color:#2563eb}
+        .badge-warning{background:#fef3c7;color:#d97706}
+        .badge-highrisk{background:#ffedd5;color:#ea580c}
+        .badge-critical{background:#fee2e2;color:#dc2626}
+        .severity-legend{display:flex;gap:16px;flex-wrap:wrap;margin-top:12px}
+        .severity-legend .item{display:flex;align-items:center;gap:6px;font-size:12px;color:#64748b}
+        .severity-legend .swatch{width:12px;height:12px;border-radius:3px}
+        .tab-buttons{display:flex;gap:4px;margin-bottom:16px;flex-wrap:wrap}
+        .tab-btn{padding:6px 16px;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:6px;color:#64748b;font-size:13px;cursor:pointer;transition:all .2s}
+        .tab-btn.active{background:#3b82f6;color:#fff;border-color:#3b82f6}
+        .tab-btn:hover:not(.active){color:#1e293b;border-color:#94a3b8}
+        .tab-content{display:none}
+        .tab-content.active{display:block}
+        .dl-btn{padding:6px 14px;background:#059669;color:#fff;border:none;border-radius:6px;font-size:12px;font-weight:600;cursor:pointer;transition:background .2s;display:inline-flex;align-items:center;gap:4px}
+        .dl-btn:hover{background:#047857}
+        .tab-bar{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+        @media(max-width:1024px){.kpi-grid{grid-template-columns:repeat(3,1fr)}.chart-grid,.chart-grid-2{grid-template-columns:1fr}}
+        @media(max-width:640px){.kpi-grid{grid-template-columns:repeat(2,1fr)}.container{padding:12px}}
+    </style>
+</head>
+<body>
+    <!-- Login -->
+    <div class="login-overlay" id="loginOverlay">
+        <div class="login-box">
+            <div class="login-logo">
+                <div class="icon">📊</div>
+                <h2>SEA GVI Aging Management</h2>
+                <p>Samsung Electronics</p>
+            </div>
+            <div class="login-field">
+                <label for="loginId">User ID</label>
+                <input type="text" id="loginId" placeholder="Enter your ID" autocomplete="off">
+            </div>
+            <div class="login-field">
+                <label for="loginPw">Password</label>
+                <input type="password" id="loginPw" placeholder="Enter your password">
+            </div>
+            <button class="login-btn" id="loginBtn">Sign In</button>
+            <div class="login-error" id="loginError"></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+        <div>
+            <h1><span class="icon">📊</span> SEA GVI Aging Management</h1>
+            <div class="subtitle" id="lastUpdated">Last Updated: —</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="kpi-grid" id="kpiGrid"></div>
+
+        <!-- Row 1 -->
+        <div class="chart-grid">
+            <div class="chart-card">
+                <div class="chart-title"><span class="dot" style="background:#3b82f6"></span> Location Distribution</div>
+                <div class="chart-wrapper" style="height:300px"><canvas id="agingPeriodChart"></canvas></div>
+            </div>
+            <div class="chart-card">
+                <div class="chart-title"><span class="dot" style="background:#f59e0b"></span> Aging Severity</div>
+                <div class="chart-wrapper" style="height:260px"><canvas id="severityChart"></canvas></div>
+                <div class="severity-legend" id="severityLegend"></div>
+            </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="chart-grid-2">
+            <div class="chart-card">
+                <div class="chart-title"><span class="dot" style="background:#ef4444"></span> Top 10 Models</div>
+                <div class="chart-wrapper" style="height:380px"><canvas id="topModelsChart"></canvas></div>
+            </div>
+            <div class="chart-card">
+                <div class="chart-title"><span class="dot" style="background:#10b981"></span> Grade Distribution</div>
+                <div class="chart-wrapper" style="height:380px"><canvas id="gradeChart"></canvas></div>
+            </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="chart-grid-2">
+            <div class="chart-card">
+                <div class="chart-title"><span class="dot" style="background:#8b5cf6"></span> Storage Distribution</div>
+                <div class="chart-wrapper" style="height:280px"><canvas id="storageChart"></canvas></div>
+            </div>
+            <div class="chart-card">
+                <div class="chart-title"><span class="dot" style="background:#f59e0b"></span> Aging Days Distribution</div>
+                <div class="chart-wrapper" style="height:280px"><canvas id="agingHistChart"></canvas></div>
+            </div>
+        </div>
+
+        <!-- Tables -->
+        <div class="table-card">
+            <div class="table-header">
+                <div class="chart-title" style="margin-bottom:0"><span class="dot" style="background:#8b5cf6"></span> IMEI Detail</div>
+                <input type="text" class="search-box" id="searchBox" placeholder="🔍 Search model name...">
+            </div>
+            <div class="tab-bar">
+                <div class="tab-buttons" id="locTabs"></div>
+                <button class="dl-btn" id="dlBtn" onclick="downloadCurrentTab()">📥 Excel</button>
+            </div>
+            <div id="locTabContent"></div>
+        </div>
+    </div>
+
+    <script src="aging_data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
