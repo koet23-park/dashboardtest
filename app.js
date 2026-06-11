@@ -25,18 +25,13 @@ window.addEventListener('load', function() { document.getElementById('loginId').
 
 /* ===== Load Dashboard ===== */
 function loadDashboard() {
-    if (typeof AGING_DATA !== 'undefined' && AGING_DATA) {
-        DATA = AGING_DATA;
+    fetch('aging_data.json').then(function(r) { return r.json(); }).then(function(data) {
+        DATA = data;
         renderAll();
-    } else {
-        fetch('aging_data.json').then(function(r) { return r.json(); }).then(function(data) {
-            DATA = data;
-            renderAll();
-        }).catch(function(err) {
-            console.error('Failed to load data:', err);
-            document.getElementById('kpiGrid').innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:40px;color:#dc2626">데이터를 불러올 수 없습니다.</div>';
-        });
-    }
+    }).catch(function(err) {
+        console.error('Failed to load data:', err);
+        document.getElementById('kpiGrid').innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:40px;color:#dc2626">데이터를 불러올 수 없습니다.</div>';
+    });
 }
 
 function destroyChart(id) {
